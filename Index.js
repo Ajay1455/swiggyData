@@ -138,6 +138,11 @@ const restaurants = [
 
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.send("This is swiggy data api...");
+});
+
+
 app.get('/api/dishes', (req, res) => {
   res.json(dishes);
 });
